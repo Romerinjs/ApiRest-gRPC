@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package pedidos;
+
+service PedidoService {
+  rpc CrearPedido (PedidoRequest) returns (PedidoResponse);
+  rpc SuscribirPedidos (SuscripcionRequest) returns (stream PedidoResponse);
+}
+
+message PedidoRequest {
+  string cliente = 1;
+  string producto = 2;
+  int32 cantidad = 3;
+}
+
+message PedidoResponse {
+  int32 id = 1;
+  string cliente = 2;
+  string producto = 3;
+  int32 cantidad = 4;
+  string estado = 5;
+}
+
+message SuscripcionRequest {}

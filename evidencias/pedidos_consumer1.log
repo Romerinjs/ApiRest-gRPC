@@ -1,0 +1,6 @@
+Consumiendo pedidos-eventos en el grupo demo-pedidos; Ctrl+C para salir.
+Particiones asignadas a este consumer: ['pedidos-eventos[0]']
+[CONSUMER] particion=0 offset=0 evento={'tipo': 'pedido_creado', 'pedido': {'id': 2, 'cliente': 'Cliente Demo 2', 'producto': 'Producto 2', 'cantidad': 3, 'estado': 'CREADO'}}
+[CONSUMER] particion=0 offset=1 evento={'tipo': 'pedido_creado', 'pedido': {'id': 4, 'cliente': 'Cliente Demo 4', 'producto': 'Producto 4', 'cantidad': 2, 'estado': 'CREADO'}}
+[CONSUMER] particion=0 offset=2 evento={'tipo': 'pedido_creado', 'pedido': {'id': 6, 'cliente': 'Cliente Demo 6', 'producto': 'Producto 6', 'cantidad': 1, 'estado': 'CREADO'}}
+[CONSUMER] particion=0 offset=3 evento={'tipo': 'pedido_creado', 'pedido': {'id': 8, 'cliente': 'Cliente Demo 8', 'producto': 'Producto 8', 'cantidad': 3, 'estado': 'CREADO'}}
