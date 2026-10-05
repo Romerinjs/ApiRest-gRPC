@@ -1,0 +1,6 @@
+Consumiendo usuarios-eventos en el grupo demo-usuarios; Ctrl+C para salir.
+Particiones asignadas a este consumer: ['usuarios-eventos[0]']
+[CONSUMER] particion=0 offset=0 evento={'tipo': 'usuario_creado', 'usuario': {'id': 2, 'nombre': 'Usuario Demo 2', 'correo': 'usuario2@ejemplo.com'}}
+[CONSUMER] particion=0 offset=1 evento={'tipo': 'usuario_creado', 'usuario': {'id': 4, 'nombre': 'Usuario Demo 4', 'correo': 'usuario4@ejemplo.com'}}
+[CONSUMER] particion=0 offset=2 evento={'tipo': 'usuario_creado', 'usuario': {'id': 6, 'nombre': 'Usuario Demo 6', 'correo': 'usuario6@ejemplo.com'}}
+[CONSUMER] particion=0 offset=3 evento={'tipo': 'usuario_creado', 'usuario': {'id': 8, 'nombre': 'Usuario Demo 8', 'correo': 'usuario8@ejemplo.com'}}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package usuarios;
+
+service UsuarioService {
+  rpc CrearUsuario (UsuarioRequest) returns (UsuarioResponse);
+  rpc SuscribirUsuarios (SuscripcionRequest) returns (stream UsuarioResponse);
+}
+
+message UsuarioRequest {
+  string nombre = 1;
+  string correo = 2;
+}
+
+message UsuarioResponse {
+  int32 id = 1;
+  string nombre = 2;
+  string correo = 3;
+}
+
+message SuscripcionRequest {}

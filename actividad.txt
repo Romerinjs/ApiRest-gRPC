@@ -1,0 +1,21 @@
+Actividad sugerida para el hogar (trabajo independiente)
+Descripción: Esta semana el trabajo independiente reemplaza los tres laboratorios extensos originalmente planteados (gRPC, Kafka y taller de arquitectura), distribuidos en una guía única y secuencial.
+Objetivo: Implementar de forma práctica un servicio gRPC funcional y un flujo de mensajería con Kafka, y aplicar ambos conceptos en un ejercicio de diseño de arquitectura.
+Guía paso a paso para el estudiante:
+Parte 1 — Servicio gRPC:
+    20. Instalar el compilador protoc y las dependencias de gRPC para el lenguaje de preferencia (Python, Java o Go).
+    21. Definir un archivo .proto con un servicio de al menos 2 métodos (uno unary y uno server-streaming).
+    22. Generar el código stub con protoc.
+    23. Implementar el servidor con la lógica de negocio.
+    24. Implementar un cliente que consuma ambos métodos.
+    25. Probar localmente y capturar evidencia (logs o pantallazos).
+Parte 2 — Mensajería con Kafka:
+    26. Levantar un clúster local de Kafka de un solo broker (usando Docker Compose).
+    27. Crear un topic con al menos 2 particiones.
+    28. Implementar un producer que publique mensajes simulando eventos (ejemplo: "pedido creado").
+    29. Implementar un consumer que se suscriba al topic y procese los mensajes.
+    30. Probar con 2 consumers en el mismo *consumer group* para observar el reparto de particiones.
+Parte 3 — Taller de diseño (mini-arquitectura):
+    31. Diseñar en un diagrama simple una arquitectura de microservicios donde un servicio use gRPC para comunicación síncrona interna y Kafka para eventos asíncronos entre servicios.
+    32. Justificar por escrito (media página) por qué se eligió cada tecnología para cada interacción.
+Entregable esperado para la siguiente semana: Repositorio (o carpeta comprimida) con el código del servicio gRPC, el productor/consumidor de Kafka, capturas de las pruebas, y el diagrama de arquitectura con su justificación escrita.
